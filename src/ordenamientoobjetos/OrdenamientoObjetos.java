@@ -16,6 +16,21 @@ public class OrdenamientoObjetos {
         arrayEstudiantes[3] = new Estudiantes ("Edwin", "Perdomo", "123456", 2, 4.2);
         arrayEstudiantes[4] = new Estudiantes ("Felipe", "Polanco", "1234567", 1, 2.0);
         arrayEstudiantes[5] = new Estudiantes ("Fernando", "Peralta", "12345678", 6, 3.5);
-    }
     
+    
+     int temp;
+        for(int i=1;i<arrayEstudiantes.length;i++){
+            for(int j=0;j<arrayEstudiantes.length;j++){
+                if(arrayEstudiantes[j].getNota()<arrayEstudiantes[j+1].getNota()){
+                    temp=arrayEstudiantes[j].getPuesto();
+                    arrayEstudiantes[j].setPuesto(arrayEstudiantes[j+1].getPuesto());
+                    arrayEstudiantes[j+1].setPuesto(temp);
+                }
+            }
+        }
+    }
 }
+    
+
+    
+
