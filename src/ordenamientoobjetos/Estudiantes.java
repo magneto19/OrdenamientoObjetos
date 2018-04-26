@@ -42,8 +42,11 @@ public class Estudiantes {
     }
 
     
-    public String imprimir() {
-        return "";
+    public String imprimir () {
+        String mensaje;
+        mensaje = getNombre() + "" + getApellido() + "" + getNota()+ "" + getPuesto();
+        return mensaje;
+        
     }
     
     public String getNombre() {

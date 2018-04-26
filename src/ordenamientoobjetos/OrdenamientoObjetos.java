@@ -1,5 +1,7 @@
 package ordenamientoobjetos;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Johan Sebastian Lasso Rivas
@@ -15,7 +17,7 @@ public class OrdenamientoObjetos {
         arrayEstudiantes[2] = new Estudiantes ("Camilo", "Cortez", "12345", 4, 4.5);
         arrayEstudiantes[3] = new Estudiantes ("Edwin", "Perdomo", "123456", 2, 4.2);
         arrayEstudiantes[4] = new Estudiantes ("Felipe", "Polanco", "1234567", 1, 2.0);
-        arrayEstudiantes[5] = new Estudiantes ("Fernando", "Peralta", "12345678", 6, 3.5);
+        
     
     
      int temp;
@@ -28,9 +30,14 @@ public class OrdenamientoObjetos {
                 }
             }
         }
+    for (int x=0; x < arrayEstudiantes.length; x++){
+        JOptionPane.showMessageDialog(null, arrayEstudiantes[x].imprimir());
+        }
     }
+    
 }
     
+
 
     
 
